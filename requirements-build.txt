@@ -1,0 +1,5 @@
+# Optional. Not required to run Francabel.
+# Use later on Windows if you want a double-click .exe:
+#   pip install -r requirements-build.txt
+#   pyinstaller --noconfirm --windowed --onefile --name Francabel francabel.py
+pyinstaller

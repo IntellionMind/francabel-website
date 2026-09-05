@@ -1,0 +1,94 @@
+{
+  "date": "2026-09-01",
+  "generated_at": "2026-09-01T11:32:58",
+  "shop_name": "Francabel",
+  "season": "Labor Day",
+  "seasons": [
+    "Labor Day",
+    "late summer",
+    "heat",
+    "back-to-school",
+    "storms",
+    "fiscal year",
+    "bid season",
+    "weekend parties"
+  ],
+  "story_of_the_day": "Labor Day is a long weekend, not a testimonial reel. Francabel writes tonight for this service area. On the slate: Water heater replacement, Catering / parties.",
+  "posts": [
+    {
+      "id": "6d7c8f514a53",
+      "created_at": "2026-09-01T11:32:58",
+      "date": "2026-09-01",
+      "service": "Water heater replacement",
+      "format": "square",
+      "hook": "Heat wave, long showers, a tired anode rod.",
+      "question": "Same-day swap, or a planned window this week?",
+      "story": "Labor Day is a long weekend, not a testimonial reel. Francabel writes tonight for this service area. On the slate: Water heater replacement, Catering / parties.",
+      "season": "Labor Day",
+      "captions": {
+        "facebook": "Overnight desk. Heat wave, long showers, a tired anode rod. If you are in this service area, the question is practical: Same-day swap, or a planned window this week?",
+        "instagram": "Heat wave, long showers, a tired anode rod. / this service area\nSame-day swap, or a planned window this week?",
+        "tiktok": "Heat wave, long showers, a tired anode rod. Same-day swap, or a planned window this week?",
+        "linkedin": "Francabel: water heater replacement for homes and small shops in this service area. Local crews on call. Same-day swap, or a planned window this week? We do not publish named-customer claims."
+      },
+      "shot_list": {
+        "duration_sec": 12,
+        "shots": [
+          "0\u20134s: utility closet door, no faces, tank silhouette only",
+          "4\u20138s: close on pipes and drain valve, still, COMPOSITE-safe",
+          "8\u201312s: hold on the on-screen question card"
+        ],
+        "on_screen_question": "Same-day swap, or a planned window this week?",
+        "voice_line": "Flush date unknown is a reason to call. No invented testimonials here."
+      },
+      "visual": "/home/wealthysavant/Documents/Francabel/assets/tank.png",
+      "visual_label": null,
+      "visual_footer": null,
+      "status": "queued",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "linkedin"
+      ]
+    },
+    {
+      "id": "36eb33ba30e5",
+      "created_at": "2026-09-01T11:32:58",
+      "date": "2026-09-01",
+      "service": "Catering / parties",
+      "format": "story",
+      "hook": "Weekend count: how many plates?",
+      "question": "What time should the first tray land?",
+      "story": "Labor Day is a long weekend, not a testimonial reel. Francabel writes tonight for this service area. On the slate: Water heater replacement, Catering / parties.",
+      "season": "Labor Day",
+      "captions": {
+        "facebook": "Weekend count: how many plates? Local crews on call. If you are planning a gather in this service area, the real question is What time should the first tray land? No fake guest-of-honor captions.",
+        "instagram": "Weekend count: how many plates?\nLocal crews on call.\nWhat time should the first tray land?",
+        "tiktok": "Weekend count: how many plates? What time should the first tray land?",
+        "linkedin": "Hospitality note for Labor Day. Local crews on call. What time should the first tray land?"
+      },
+      "shot_list": {
+        "duration_sec": 12,
+        "shots": [
+          "0\u20134s: outdoor table, late-summer light, no faces",
+          "4\u20138s: hands-off tray detail",
+          "8\u201312s: hold question, voice line"
+        ],
+        "on_screen_question": "What time should the first tray land?",
+        "voice_line": "The table is the party. Ask for a count."
+      },
+      "visual": "/home/wealthysavant/Documents/Francabel/assets/table.png",
+      "visual_label": null,
+      "visual_footer": null,
+      "status": "queued",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "linkedin"
+      ]
+    }
+  ],
+  "honesty": "No named customers, families, or testimonials were invented. Cities are service area only. Generated visuals are labeled COMPOSITE."
+}

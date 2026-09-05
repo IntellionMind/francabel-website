@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Francabel Enterprise
+Comment=Overnight social desk for local services
+Exec=/usr/bin/python3 /home/wealthysavant/Documents/Francabel/francabel.py
+Icon=/home/wealthysavant/Documents/Francabel/assets/icon.png
+Path=/home/wealthysavant/Documents/Francabel
+Terminal=false
+Categories=Office;
+StartupNotify=true

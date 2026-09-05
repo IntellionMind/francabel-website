@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francabel Enterprise | Government Contracting, Catering & Commercial Services Miami</title>
+    <meta name="description" content="SAM.gov Registered Small Business offering Federal & Public Sector Contracting, Commercial Plumbing & Water Heater Swaps, and Private Event Catering in Miami & surrounding areas.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <img src="assets/icon.png" alt="Francabel Logo" class="brand-icon">
+                <div class="brand-text">
+                    <span class="brand-name">FRANCABEL</span>
+                    <span class="brand-sub">ENTERPRISE</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#services" class="nav-link active">Services & Capabilities</a>
+                <a href="#government" class="nav-link">Government Sector</a>
+                <a href="#catering" class="nav-link">Catering & Events</a>
+                <a href="#plumbing" class="nav-link">Plumbing & Contracting</a>
+                <a href="#contact" class="nav-link btn-nav">Contact Us</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                SAM.gov Registered Small Business · Miami & Surrounding Areas
+            </div>
+            
+            <h1 class="hero-title">
+                Proven Execution for <span class="gold-gradient">Public Sector</span> & <span class="gold-gradient">Commercial Services</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                From federal procurement capability packets to commercial water heater swaps and premier private event catering in Miami—Francabel Enterprise delivers precision, timing, and uncompromised standards.
+            </p>
+
+            <div class="hero-actions">
+                <button class="btn btn-primary" onclick="openModal('Government Contracting')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    Request Capability Packet
+                </button>
+                <button class="btn btn-secondary" onclick="openModal('General Quote')">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Get Commercial Quote
+                </button>
+            </div>
+
+            <!-- SAM.gov Bar -->
+            <div class="sam-bar">
+                <div class="sam-item">
+                    <span class="sam-label">SAM.gov Status:</span>
+                    <span class="sam-val status-active">Active Small Business</span>
+                </div>
+                <div class="sam-divider"></div>
+                <div class="sam-item">
+                    <span class="sam-label">Service Area:</span>
+                    <span class="sam-val">Miami & Surrounding Areas</span>
+                </div>
+                <div class="sam-divider"></div>
+                <div class="sam-item">
+                    <span class="sam-label">Capability:</span>
+                    <span class="sam-val">NAICS Compliant · No Invented Awards</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Filter & Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Core Offerings</span>
+                <h2 class="section-title">Diversified Capabilities. One Standard.</h2>
+                <p class="section-desc">Select a capability domain to explore how Francabel Enterprise supports government agencies, commercial venues, and event hosts.</p>
+            </div>
+
+            <!-- Service Domain Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-filter="all">All Services</button>
+                <button class="tab-btn" data-filter="government">Government Contracts</button>
+                <button class="tab-btn" data-filter="catering">Catering & Events</button>
+                <button class="tab-btn" data-filter="plumbing">Plumbing & Contracting</button>
+                <button class="tab-btn" data-filter="specialty">Specialty Assembly</button>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="services-grid">
+                
+                <!-- Card 1: Government Contracting -->
+                <div class="service-card" data-category="government" id="government">
+                    <div class="card-image-wrap">
+                        <img src="assets/columns.png" alt="Government Contracting Columns" class="card-img">
+                        <div class="card-badge gold">Primary Source</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🏛️</div>
+                        <h3 class="card-title">Government Contracting & Procurement</h3>
+                        <p class="card-copy">
+                            SAM.gov-registered small business supporting federal, state, and public-sector work. Active registrations, NAICS fit, and live capability packets.
+                        </p>
+                        <div class="card-highlights">
+                            <span>• Capability Packets Ready</span>
+                            <span>• SAM.gov Active Status</span>
+                            <span>• Fiscal Year Pursuit Fit</span>
+                        </div>
+                        <div class="card-quote">
+                            "Fiscal window still open. Capability packet first, no invented awards."
+                        </div>
+                        <button class="btn btn-card" onclick="openModal('Government Contracting')">
+                            Request Capability Packet
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Catering & Events -->
+                <div class="service-card" data-category="catering" id="catering">
+                    <div class="card-image-wrap">
+                        <img src="assets/table.png" alt="Catering & Event Tables" class="card-img">
+                        <div class="card-badge amber">High Demand</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🍽️</div>
+                        <h3 class="card-title">Catering & Private Hospitality</h3>
+                        <p class="card-copy">
+                            Full event dining, table setups, tray services, timing, and dedicated staffing for private functions in Miami & surrounding areas.
+                        </p>
+                        <div class="card-highlights">
+                            <span>• Tables, Trays & Timing</span>
+                            <span>• Dedicated Host Staffing</span>
+                            <span>• Tailored Event Menus</span>
+                        </div>
+                        <div class="card-quote">
+                            "Miami still has parties on the calendar. Who's hosting this weekend?"
+                        </div>
+                        <button class="btn btn-card" onclick="openModal('Catering & Events')">
+                            Book Event Catering
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Plumbing & Water Heater Swaps -->
+                <div class="service-card" data-category="plumbing" id="plumbing">
+                    <div class="card-image-wrap">
+                        <img src="assets/tank.png" alt="Water Heater Replacement" class="card-img">
+                        <div class="card-badge blue">Rapid Response</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🔧</div>
+                        <h3 class="card-title">Commercial & Residential Plumbing</h3>
+                        <p class="card-copy">
+                            Water heater replacements (gas & electric), anode rod swaps, tankless upgrades, and emergency piping maintenance in Miami.
+                        </p>
+                        <div class="card-highlights">
+                            <span>• Same-Day Swap Windows</span>
+                            <span>• Storm Season Preparation</span>
+                            <span>• Gas & Electric Units</span>
+                        </div>
+                        <div class="card-quote">
+                            "Still 87° in Miami. Storm season next. When does that tank quit?"
+                        </div>
+                        <button class="btn btn-card" onclick="openModal('Water Heater Replacement')">
+                            Schedule Water Heater Swap
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Basketball Hoop & Specialty Assembly -->
+                <div class="service-card" data-category="specialty" id="specialty">
+                    <div class="card-image-wrap">
+                        <img src="assets/hoop.png" alt="Basketball Hoop Installation" class="card-img">
+                        <div class="card-badge copper">Turnkey Installation</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon">🏀</div>
+                        <h3 class="card-title">Specialty Assembly & Outdoor Contracting</h3>
+                        <p class="card-copy">
+                            Heavy-duty in-ground basketball hoop installation, concrete footings, rim leveling, portable setup, and recreational hardware.
+                        </p>
+                        <div class="card-highlights">
+                            <span>• In-Ground & Portable Rims</span>
+                            <span>• Precision Footings & Anchors</span>
+                            <span>• Driveway Court Setup</span>
+                        </div>
+                        <div class="card-quote">
+                            "Who's got next? Driveway or in-ground—the yard decides."
+                        </div>
+                        <button class="btn btn-card" onclick="openModal('Basketball Hoop Assembly')">
+                            Request Install Quote
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Francabel / Verification Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-box">
+                <div class="trust-content">
+                    <span class="trust-tag">The Francabel Standard</span>
+                    <h2>Honesty, Compliance & Direct Execution</h2>
+                    <p>
+                        We operate with absolute transparency: no invented customer claims, no fabricated testimonials, and no artificial awards. Every capability packet, service invoice, and catering schedule reflects live, verifiable capacity.
+                    </p>
+                    <div class="trust-grid">
+                        <div class="trust-item">
+                            <div class="trust-num">01</div>
+                            <h4>SAM.gov Verified</h4>
+                            <p>Active registration for federal, municipal, and institutional bid windows.</p>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-num">02</div>
+                            <h4>Local Miami Crews</h4>
+                            <p>Direct dispatch across Miami-Dade, Broward, and surrounding service areas.</p>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-num">03</div>
+                            <h4>On-Time Delivery</h4>
+                            <p>Precision timing for catering spreads, plumbing swaps, and project deadlines.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Social Media Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2>Let's Discuss Your Next Project</h2>
+                    <p>Whether you need a SAM.gov capability statement, emergency water heater replacement, or event catering setup in Miami, our desk is ready.</p>
+                    
+                    <div class="info-details">
+                        <div class="info-card">
+                            <div class="info-icon">📧</div>
+                            <div>
+                                <span class="info-label">Direct Email</span>
+                                <a href="mailto:eduardo@francabel.com" class="info-value">eduardo@francabel.com</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">🌐</div>
+                            <div>
+                                <span class="info-label">Official Website</span>
+                                <span class="info-value">francabel.com</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <span class="info-label">Primary Service Region</span>
+                                <span class="info-value">Miami & Surrounding Areas, FL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Email Button -->
+                    <div class="contact-actions">
+                        <a href="mailto:eduardo@francabel.com?subject=Inquiry%20from%20Francabel.com" class="btn btn-primary">
+                            Email Eduardo Directly
+                        </a>
+                        <button class="btn btn-secondary" onclick="copyEmail()">
+                            Copy Email Address
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Connect / Social Media Hub -->
+                <div class="social-hub">
+                    <h3>Follow Francabel Enterprise</h3>
+                    <p>Stay updated with our daily desk posts, seasonal service updates, and public sector announcements across all social platforms:</p>
+                    
+                    <div class="social-links-grid">
+                        <a href="https://www.facebook.com/francabelenterprise" target="_blank" rel="noopener" class="social-card fb">
+                            <div class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </div>
+                            <div class="social-meta">
+                                <span class="social-name">Facebook</span>
+                                <span class="social-handle">@francabelenterprise</span>
+                            </div>
+                            <span class="social-arrow">↗</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/francabelenterprise/" target="_blank" rel="noopener" class="social-card ig">
+                            <div class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </div>
+                            <div class="social-meta">
+                                <span class="social-name">Instagram</span>
+                                <span class="social-handle">@francabelenterprise</span>
+                            </div>
+                            <span class="social-arrow">↗</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/francabel-enterprise-916448416/?isSelfProfile=true" target="_blank" rel="noopener" class="social-card li">
+                            <div class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.239-2.762-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </div>
+                            <div class="social-meta">
+                                <span class="social-name">LinkedIn</span>
+                                <span class="social-handle">Francabel Enterprise</span>
+                            </div>
+                            <span class="social-arrow">↗</span>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@francabelenterprise" target="_blank" rel="noopener" class="social-card tt">
+                            <div class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.27 1.76-.23 1.01.07 2.11.75 2.87.69.77 1.75 1.16 2.77 1.05 1.01-.08 1.95-.61 2.47-1.47.45-.73.66-1.6.65-2.46.01-4.63 0-9.26.01-13.89z"/></svg>
+                            </div>
+                            <div class="social-meta">
+                                <span class="social-name">TikTok</span>
+                                <span class="social-handle">@francabelenterprise</span>
+                            </div>
+                            <span class="social-arrow">↗</span>
+                        </a>
+
+                        <a href="https://x.com/A1_Francabel" target="_blank" rel="noopener" class="social-card x">
+                            <div class="social-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </div>
+                            <div class="social-meta">
+                                <span class="social-name">X (Twitter)</span>
+                                <span class="social-handle">@A1_Francabel</span>
+                            </div>
+                            <span class="social-arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <span class="footer-brand">FRANCABEL ENTERPRISE</span>
+                <span class="footer-copyright">© 2026 Francabel. All Rights Reserved. SAM.gov Small Business.</span>
+            </div>
+            <div class="footer-right">
+                <a href="#services">Services</a>
+                <a href="#government">SAM.gov</a>
+                <a href="#catering">Catering</a>
+                <a href="#plumbing">Plumbing</a>
+                <a href="mailto:eduardo@francabel.com">eduardo@francabel.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Inquiry Modal -->
+    <div class="modal-overlay" id="inquiryModal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <span class="section-tag" id="modalTag">Direct Request</span>
+                <h3 id="modalTitle">Request Service / Information</h3>
+                <p id="modalSub">Select options below or send a direct email to eduardo@francabel.com</p>
+            </div>
+            
+            <form class="modal-form" id="modalForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="serviceType">Service Line</label>
+                    <select id="serviceType" class="form-control">
+                        <option value="Government Contracting">Government Contracting (Capability Packet)</option>
+                        <option value="Catering & Events">Catering & Private Events (Miami)</option>
+                        <option value="Water Heater Replacement">Water Heater Replacement / Plumbing</option>
+                        <option value="Basketball Hoop Assembly">Basketball Hoop & Specialty Assembly</option>
+                        <option value="General Inquiry">General Enterprise Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientName">Your Name / Organization</label>
+                    <input type="text" id="clientName" class="form-control" placeholder="e.g. John Doe / Agency Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientEmail">Email Address</label>
+                    <input type="email" id="clientEmail" class="form-control" placeholder="name@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientDetails">Project / Event Details</label>
+                    <textarea id="clientDetails" class="form-control" rows="3" placeholder="Specify date, location, or requested NAICS codes..."></textarea>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Dispatch Inquiry to Eduardo
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">Email copied to clipboard!</div>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>

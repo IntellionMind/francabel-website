@@ -1,0 +1,30 @@
+{
+  "name": "Francabel Enterprise",
+  "cities": [
+    "Miami and surrounding areas"
+  ],
+  "desk_hour": "3:00",
+  "posts_per_night": 2,
+  "extra_platforms": [
+    "X",
+    "TikTok",
+    "Instagram",
+    "Facebook",
+    "LinkedIn"
+  ],
+  "extra_services": [
+    "Water heater replacement",
+    "Basketball hoop installation",
+    "Catering / parties",
+    "Government contracts"
+  ],
+  "facebook_url": "https://www.facebook.com/francabelenterprise",
+  "instagram_url": "https://www.instagram.com/francabelenterprise/",
+  "linkedin_url": "https://www.linkedin.com/in/francabel-enterprise-916448416/?isSelfProfile=true",
+  "tiktok_url": "https://www.tiktok.com/@francabelenterprise",
+  "x_url": "https://x.com/A1_Francabel",
+  "facebook_page_token": "",
+  "linkedin_token": "",
+  "website": "https://francabel.com",
+  "honesty_lock": true
+}
